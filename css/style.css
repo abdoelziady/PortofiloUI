@@ -657,15 +657,16 @@ margin-top: -70px !important;
 
 
 .home .home-details p {
-  margin: 30px 0 23px;
+  margin: 20px 0 23px;
   font-size: 16px;
   line-height: 32px;
 }
 .home .home-details .p_text_home
 {
   color: #a09e9e;
-  margin-top: 20px;
+  margin-top: 10px;
   padding-bottom: 0px;
+  font-size: 16px;
 }
 .home .home-details .btn_p_Home .btn-about
 {
@@ -683,7 +684,7 @@ margin-top: -70px !important;
 }
 .home ul.social {
   margin-left: -5px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .home ul.social li {
