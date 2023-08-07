@@ -55,13 +55,17 @@ body {
   font-weight: 500;
   line-height: 1.6;
   position: relative;
-  background-size: cover;
-  background-position: center;
   height: 100%;
   width: 100%;
   background-color: #111;
 }
-
+.home 
+{
+  background-image: url(../img/Home\ dark.png) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .poppins-font {
   font-family: "Poppins", sans-serif;
 }
@@ -559,20 +563,46 @@ body.light hr.separator {
   background-color: 
 } */
 
-.home .bg {
-  background-image: url(../img/homeoo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 440px;
-  width: 450px;
-  z-index: 111;
-  border-radius: 350px;
-  left: 85px !important;
-  top: 90px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.884);
-}
 
+.home .logoooo
+{
+  position: relative;
+  margin-top: 20px !important;
+  padding-top:0px !important;
+  margin-bottom: 0px !important;
+  padding-bottom:0px !important;
+}
+.home .logo_bg
+{
+  color: rgb(37, 37, 37) !important;
+font-family: 'Aguafina Script';
+font-size: 38px;
+font-style: normal;
+font-weight: 400;
+word-spacing: 1px;
+line-height: normal;
+}
+.home .logo_text
+{
+position: absolute;
+top: 12px;
+left: 35px;
+font-family: 'Lobster', cursive;
+font-size: 22px;
+font-style: bold !important;
+font-weight: 400;
+line-height: normal;
+color: #ffffff !important;
+transition: all 0.5s ease-in-out;
+}
+.home .logo_text:hover
+{
+  color: #FF9900 !important;
+}
+.home .logo_text span 
+{
+  color: #FF9900 !important;
+}
 .home .container-home {
   display: flex;
   align-items: center;
@@ -585,10 +615,22 @@ body.light hr.separator {
 }
 
 .home .home-details h1 {
-  font-size: 40px;
+  font-size: 44px;
   line-height: 50px !important;
   font-weight: 600;
-  margin: 8px 0 10px;
+  color: #fff;
+}
+.home .content-home h6
+{
+margin-bottom: 30px !important;
+margin-top: -70px !important;
+}
+.home .content-home h1 span {
+  font-size: 30px;
+  /* line-height: 50px !important;
+  font-weight: 600; */
+  color: #FF9900 !important;
+  /* margin: 8px 0 10px; */
 }
 .home .home-details .ex {
   font-size: 30px !important;
@@ -607,7 +649,7 @@ body.light hr.separator {
 
 .home .home-details h6 {
   color: #FF9900;
-  font-size: 14px;
+  font-size: 16px;
   padding-bottom: 10px;
   font-weight: 600;
   display: block;
@@ -623,17 +665,7 @@ body.light hr.separator {
 {
   color: #a09e9e;
   margin-top: 20px;
-  padding-top: -10px;
-  border-left:2px solid #FF9900;
-  padding-left: 12px;
   padding-bottom: 0px;
-}
-.home .home-details  .p_text_home span 
-{
-  color:  #FF9900;
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: uppercase;
 }
 .home .home-details .btn_p_Home .btn-about
 {
@@ -675,6 +707,10 @@ body.light hr.separator {
 .home ul.social li a:hover {
   color: #fff;
   background-color: #FF9900;
+}
+.home .homemobilesec
+{
+  transform: translateX(-150px) translateY(-60px) !important;
 }
 /*** About ***/
 .about img 
@@ -1649,11 +1685,18 @@ transition: all 0.5s ease-in-out;
   .btn {
     padding: 0 28px;
   }
+  .home .homemobile
+  {
+  display: none !important;
+  }
 
   body.home {
     padding: 25px;
   }
-
+.home 
+{
+  background: #111;
+}
   body.home .main-container {
     padding: 30px 0 !important;
   }
@@ -1672,6 +1715,15 @@ transition: all 0.5s ease-in-out;
     height: 300px !important;
     /* border: 4px solid #252525; */
     margin: 0 auto 25px;
+    display: block;
+ 
+  }
+  .home .main-img-mobile {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px !important;
+    /* border: 4px solid #252525; */
+    margin: 60px auto 120px;
     display: block;
  
   }
@@ -1971,7 +2023,7 @@ transition: all 0.5s ease-in-out;
 
   .home #menuToggle {
     right: 25px;
-    top: 25px;
+    top: 10px;
     padding: 17px 0 0 13px;
   }
 
@@ -2021,8 +2073,9 @@ transition: all 0.5s ease-in-out;
   .home .home-details h6 {
     font-size: 19px;
   }
-
+ 
   .about .logoooo,
+  .home .logoooo,
   .portfolio .logoooo,
   .contact .logoooo
   {
@@ -2035,8 +2088,17 @@ transition: all 0.5s ease-in-out;
     z-index: 11 !important;
     top: 0 !important;
   }
-
+  .home img
+  {
+    margin-top: 60px;
+    margin-bottom: 150px;
+  }
+  .home .homemobile
+  {
+  display: none !important;
+  }
   .portfolio .logo_bg,
+  .home .logo_bg,
   .about .logo_bg,
   .contact .logo_bg
   {
@@ -2046,6 +2108,7 @@ font-size: 34px;
   }
   .portfolio .logo_text,
   .about .logo_text,
+  .home .logo_text,
   .contact .logo_text
 {
   color: #ffffff !important;
